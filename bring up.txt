@@ -1,0 +1,91 @@
+int ledPin = 22;   
+void setup() {
+  Serial.begin(9600);
+  // initialize digital pin LED_BUILTIN as an output.
+  pinMode(ledPin, OUTPUT);
+ // digitalWrite(ledPin, LOW);/* initialise the gate as low
+}
+
+// the loop function runs over and over again forever
+void loop() {
+// digitalWrite(ledPin, HIGH);   // turn the LED on (HIGH is the voltage level)
+  delay(100);                       // wait for a second
+  Serial.println(digitalRead(ledPin));
+  digitalWrite(ledPin, LOW);    // turn the LED off by making the voltage LOW
+  delay(400);                       // wait for a second
+  Serial.println(digitalRead(ledPin));
+}//pin 13 is assigned with the default led pin 
+
+
+int gate0 = 49; 
+int gate1 = 48;
+int gate2 = 47; 
+int gate3 = 46;
+int gate4 = 45;
+int gate5 = 44;
+int gate6 = 43;
+int gate7 = 42;
+int gate8 = 06;
+int gate9 = 07;
+int gate10 = 41;
+int gate11 = 40;
+int gate12 = 04;
+int gate13 = 0;
+int gate14 = 01;
+int gate15 = 02;
+void setup() {
+  pinMode(gate0, OUTPUT);
+  pinMode(gate1, OUTPUT);
+  pinMode(gate2, OUTPUT);
+  pinMode(gate3, OUTPUT);
+  pinMode(gate4, OUTPUT);
+  pinMode(gate5, OUTPUT);
+  pinMode(gate6, OUTPUT);
+  pinMode(gate7, OUTPUT);
+  pinMode(gate8, OUTPUT);
+  pinMode(gate9, OUTPUT);
+  pinMode(gate10, OUTPUT);
+  pinMode(gate11, OUTPUT);
+  pinMode(gate12, OUTPUT);
+  pinMode(gate13, OUTPUT);
+  pinMode(gate14, OUTPUT);
+  pinMode(gate15, OUTPUT);
+  
+}
+void loop() {
+
+//digitalWrite(gate0, HIGH);delay(100);                  
+//digitalWrite(gate0, LOW); delay(400);  
+//digitalWrite(gate1, HIGH);delay(100);                  
+//digitalWrite(gate1, LOW); delay(400);
+//digitalWrite(gate2, HIGH);delay(100);                  
+//digitalWrite(gate2, LOW); delay(400);
+//digitalWrite(gate3, HIGH);delay(100);                  
+//digitalWrite(gate3, LOW); delay(400);
+//digitalWrite(gate4, HIGH);delay(100);                  
+//digitalWrite(gate4, LOW); delay(400);
+//digitalWrite(gate5, HIGH);delay(100);                  
+//digitalWrite(gate5, LOW); delay(400);
+//digitalWrite(gate6, HIGH);delay(100);                  
+//digitalWrite(gate6, LOW); delay(400);
+//digitalWrite(gate7, HIGH);delay(100);                  
+//digitalWrite(gate7, LOW); delay(400);
+//digitalWrite(gate8, HIGH);delay(100);                  
+//digitalWrite(gate8, LOW); delay(400);
+//digitalWrite(gate9, HIGH);delay(100);                  
+//digitalWrite(gate9, LOW); delay(400);
+//digitalWrite(gate10, HIGH);delay(100);                  
+//digitalWrite(gate10, LOW); delay(400);
+//digitalWrite(gate11, HIGH);delay(100);                  
+//digitalWrite(gate11, LOW); delay(400);
+//digitalWrite(gate12, HIGH);delay(100);                  
+//digitalWrite(gate12, LOW); delay(400);
+//digitalWrite(gate13, HIGH);delay(100);                  
+//digitalWrite(gate13, LOW); delay(400);
+//digitalWrite(gate14, HIGH);delay(100);                  
+//digitalWrite(gate14, LOW); delay(400);
+digitalWrite(gate15, HIGH);delay(100);                  
+digitalWrite(gate15, LOW); delay(400);
+
+                
+}
