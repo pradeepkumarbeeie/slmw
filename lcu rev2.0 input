@@ -1,0 +1,54 @@
+int buttonstate1=0;
+int buttonstate2=0;
+int buttonstate3=0;
+int buttonstate4=0;
+
+int s1=4;
+int s2=5;
+int s3=13;
+int s4=14;
+void setup() {
+  // put your setup code here, to run once:
+Serial.begin(115200);
+pinMode(s1,INPUT);
+pinMode(s2,INPUT);
+pinMode(s3,INPUT);
+pinMode(s4,INPUT);
+}
+
+void loop() {
+  // put your main code here, to run repeatedly:
+  buttonstate1=digitalRead(s1);
+  buttonstate2=digitalRead(s2);
+  buttonstate3=digitalRead(s3);
+  buttonstate4=digitalRead(s4);
+  if(buttonstate1==LOW){
+    Serial.println("S1 HIGH");
+   }
+  else{
+     Serial.println("S1 LOW");
+  }
+  if(buttonstate2==LOW){
+    Serial.println("S2 HIGH");
+   }
+  else{
+     Serial.println("S2 LOW");
+  }
+
+
+   if(buttonstate3==LOW){
+    Serial.println("S3 HIGH");
+   }
+  else{
+     Serial.println("S3 LOW");
+  }
+
+
+   if(buttonstate4==LOW){
+    Serial.println("S4 HIGH");
+   }
+  else{
+     Serial.println("S4 LOW");
+  }
+  delay(500);
+}
